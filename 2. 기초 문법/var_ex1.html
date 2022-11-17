@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>변수</title>
+    <script>
+        var box;
+        box = 100;
+        box = 30;
+        // box에는 30 저장되어 있음 var로 선언하게 되면 변수값 변경 가능
+        document.write(box); 
+
+        // 문자형
+        var s = "javascript";
+        var num = "100";
+        var tag = "<h1>String</h1>"; // <h1> 태그로 감싸진 String 문자 화면에 나타남
+
+        document.write(tag);
+
+        // 숫자형
+        var s = 100; // 100
+        var t = Number("500"); // "500" => 500
+
+        // 논리형
+        var s = true; // true
+        var t = 10 >= 100; // false
+        var k = Boolean("hello"); //true
+        var m = Boolean(0) // false
+
+        // null & undefined 데이터
+        var s; // undefined
+        var t = hello; // ReferenceError: hello is not defined
+        t = null; 
+
+        document.write(t);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
