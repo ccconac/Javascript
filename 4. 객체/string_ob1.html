@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>객체 메서드와 속성</title>
+    <script>
+        var t = "Hello Thank you good luck to you";
+
+        document.write(t.charAt(16), "<br />"); // g (16번째 자리에 있는 문자 찾아서 반환)
+        document.write(t.indexOf("you"), "<br />"); // 12 (왼쪽에서부터 "you"라는 글자 제일 먼저 발견한 인덱스 반환)
+        document.write(t.indexOf("you", 16), "<br />"); // 29 (16번째 인덱스부터 제일 먼저 발견된 "you" 인덱스 반환)
+        
+        document.write(t.lastIndexOf("you"), "<br />"); // 29 (오른쪽에서부터 "you"라는 글자 제일 먼저 발견한 인덱스 반환)
+        document.write(t.lastIndexOf("you", 25), "<br />"); // 12 (25번째 인덱스부터 제일 먼저 발견된 "you" 인덱스 반환)
+
+        document.write(t.match("luck"), "<br />"); // luck (왼쪽에서부터 "luck"이랑 일치하는 문자 탐색해 찾으면 문자열 반환)
+        document.write(t.replace("good", "bad"), "<br />"); // Hello Thank you bad luck to you (왼쪽에서부터 제일 먼저 발견한 good을 bad로 치환)
+        document.write(t.search("you"), "<br />"); // 12 (왼쪽에서부터 제일 먼저 발견한 "you" 인덱스 값 반환 (indexOf()랑 같음))
+
+        document.write(t.substr(21, 4), "<br />"); // luck (21번째 인덱스부터 4개 문자 반환)
+        document.write(t.substring(6, 12), "<br />"); // Thank (6번째 인덱스부터 12번째 인덱스 이전의 문자 반환)
+
+        document.write(t.toLowerCase(), "<br />"); // 모두 소문자로 치환
+        document.write(t.toUpperCase(), "<br />"); // 모두 대문자로 치환
+        
+        document.write(t.length, "<br />"); // 32 (문자열 개수 반환)
+
+        var s = t.split(" "); // " " 문자(공백)를 기준으로 문자 자르고 남은 문자 반환
+        document.write(s, "<br />"); // 잘라진 문자 출력
+
+        var str = "A";
+        document.write(str.charCodeAt(0)); // 아스키 코드 반환
+        document.write(String.fromCharCode(65), "<br />"); // 아스키 코드값에 해당하는 문자 반환
+    </script>
+</head>
+<body>
+</body>
+</html>
