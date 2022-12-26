@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>재귀 함수 호출</title>
+<script>
+    var num = 0;
+    function testFunc() { // 1에서 10까지 출력하는 반복문이랑 같다고 보면 됨
+        num++;
+        document.write(num, "<br>");
+        if (num == 10) return;
+
+        testFunc();
+    }
+
+    testFunc();
+</script>
+</head>
+<body>
+</body>
+</html>
